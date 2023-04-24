@@ -100,9 +100,9 @@ ul li {
 }
 
 #description_overlay {
-    position: absolute;
+    position: relative;
     left: 5%;
-    top: 5%;
+    padding-bottom: 5% !important;
 }
 
 #titolo_film_grande {
@@ -144,7 +144,7 @@ ul li {
 }
 
 .contenitori_serie {
-    margin-top: -5%;
+    margin-top: -9%;
     margin-left: 20px;
     margin-right: 20px;
     background-color: #181818;
@@ -154,6 +154,10 @@ ul li {
     color: white;
     font-family: 'Calibri', sans-serif;
     font-size: 25px;
+}
+
+#top_10 .splide__slide {
+    height: 240px !important;
 }
 
 .slide__slide img {
@@ -171,6 +175,16 @@ ul li {
 
 .splide__slide img:hover {
     cursor:pointer;
+}
+
+@media (max-width: 1110px) {
+    #description_overlay {
+        top: 20%;
+    }
+
+    #description_overlay img {
+        display: none !important;
+    }
 }
 
 @media (max-width: 782px) {
@@ -249,6 +263,10 @@ ul li {
         display: none;
     }
 
+    #description_overlay img {
+        display: unset !important;
+    }
+
     #description_overlay {
         position: absolute;
         left: 5%;
@@ -257,6 +275,10 @@ ul li {
         padding: 30px;
         top: auto;
         bottom: 30px;
+    }
+
+    .contenitori_serie {
+        margin-top: -5%;
     }
 }
 
