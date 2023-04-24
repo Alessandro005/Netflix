@@ -102,7 +102,7 @@ ul li {
 #description_overlay {
     position: absolute;
     left: 5%;
-    top: 10%;
+    top: 3%;
 }
 
 #titolo_film_grande {
@@ -144,6 +144,7 @@ ul li {
 }
 
 .contenitori_serie {
+    margin-top: -5%;
     margin-left: 20px;
     margin-right: 20px;
     background-color: #181818;
@@ -249,13 +250,13 @@ ul li {
     }
 
     #description_overlay {
-        margin-left: 7%;
-        margin-right: 7%;
-        width: 60%;
+        position: absolute;
+        left: 7%;
+        right: 7%;
         text-align: center;
         padding: 30px;
         top: auto;
-        bottom: 0;
+        bottom: 30px;
     }
 }
 
