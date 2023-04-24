@@ -102,7 +102,7 @@ ul li {
 #description_overlay {
     position: absolute;
     left: 5%;
-    top: 3%;
+    top: 5%;
 }
 
 #titolo_film_grande {
@@ -251,8 +251,8 @@ ul li {
 
     #description_overlay {
         position: absolute;
-        left: 7%;
-        right: 7%;
+        left: 5%;
+        right: 5%;
         text-align: center;
         padding: 30px;
         top: auto;
