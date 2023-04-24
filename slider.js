@@ -74,3 +74,9 @@ navbar.style.transition = '0.1s';
 navbar.style.backgroundColor = 'black';
 document.body.classList.toggle('menu-open');
 });
+
+var button = document.querySelector('#playButton');
+
+button.addEventListener('click', function() {
+  window.open('https://streamingcommunity.capital/watch/112', '_self');
+});
