@@ -205,3 +205,14 @@ span {
         display: none;
     }
 }
+
+@media (max-width: 400px) {
+    .sottotitoli {
+        font-size: 20px;
+    }
+
+    .splide__slide__container img {
+        width: 267px; 
+        height: 150px;
+    }
+}
