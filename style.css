@@ -160,7 +160,7 @@ ul li {
     height: 240px !important;
 }
 
-.slide__slide img {
+.splide__slide img {
     width: 299; 
     height: 168;
 }
@@ -292,8 +292,8 @@ ul li {
     }
 
     .img_serie {
-        width: 180px; 
-        height: 101px;
+        width: 200px; 
+        height: 112px;
     }
 
     .splide__slide {
@@ -301,10 +301,10 @@ ul li {
     }
 
     .img_top, .locandina_top {
-        height: 120px;
+        height: 140px;
     }
 
     #top_10 .splide__slide {
-        height: 120px !important;
+        height: 140px !important;
     }
 }
