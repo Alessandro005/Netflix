@@ -263,4 +263,17 @@ ul li {
     #descrizione {
         display: none;
     }
+
+    .sottotitoli {
+        font-size: 20px;
+    }
+
+    .img_serie {
+        width: 267px; 
+        height: 150px;
+    }
+
+    .img_top, .locandina_top {
+        height: 168px;
+    }
 }
