@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="serie_TV.css">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <title>Netflix</title>
+    <link rel="shortcut icon" href="img/icons8-netflix-an-american-video-on-demand-service-24.png" />
+    <script src="https://kit.fontawesome.com/06a651c8da.js"></script>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <div id="navbar">
+
+        <div class="icon-hamburger">
+            <span></span>
+            <span></span>
+        </div>
+
+        <img id="logo_netflix" src="img/Logonetflix.png" height="30px">
+
+        <ul class="menu">
+            <a class="link" href="home.html">Home</a>
+            <a class="link" id="SerieTV" href="#">Serie TV</a>
+            <a class="link" href="#">Aggiunti di recente</a>
+            <a class="link" href="#">La mia lista</a>
+        </ul>
+
+        <ul id="barra_ricerca">
+            <img src="img/icons8-ricerca-30.png" height="30px" width="30px">
+            <a id="sezione_bambini" href="#">BAMBINI</a>
+        </ul>
+    </div>
+
+    <div>
+        <h1 id="titolo_principale_pagina">Serie TV</h1>
+        <p id="descrizione_principale_pagina">Oggi il piccolo schermo ha grandi cose da offrire: dalle sitcom ai <br>
+            drammi passando per i talk show, ecco i migliori programmi televisivi.</p>
+    </div>
+
+    <div class="contenitori_serie">
+
+        <section class="splide" id="slider_drammi" aria-labelledby="carousel-heading">
+            <h1 class="sottotitoli">I più visti su Netflix</h1>
+
+            <div class="splide__arrows">
+                <button id="arrow_prev" class="splide__arrow splide__arrow--prev">
+                    <img src="img/icons8-minore-di-50.png">
+                </button>
+                <button id="arrow_next" class="splide__arrow splide__arrow--next">
+                    <img src="img/icons8-minore-di-50 (1).png" alt="">
+                </button>
+            </div>
+          
+            <div class="splide__track">
+                  <ul class="splide__list">
+                    
+                    <li class="splide__slide">
+                        <div class="Serie">
+                            <div class="splide__slide__container">
+                                <img src="img/AAAABTv_hsQZ830Yx0ZZc6tReA8d_UfebdxDnRyfUHDfv5vc8FU1V3MzjTOFSieePz1W4MIbxqVBhhQL-AdQ77Ee3_Li6MhFMU8sa4e4k1q1PCOHC5wsLqlGAkk8p7w8P2abxCM4.jpg" width="299" height="168">
+                              </div>
+                            <span>La casa di carta</span>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="Serie">
+                            <div class="splide__slide__container">
+                                <img src="https://occ-0-2727-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcL5jLOTAi6HXLNlsRDzpf7v08IAzrUNZrAnCbLWgI9pl9--18vxOC0c1HUa-_juV6tdkUCyaNltNHvRw1cjSsoSE8fATn0ATFW2Q9vQltY6Ffnf2BlQhxpAB6wSaf7_9nLp.jpg?r=c0e" width="299" height="168">
+                            </div>
+                            <span>Peaky Blinders</span>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="Serie">
+                            <div class="splide__slide__container">
+                                <img src="https://occ-0-2727-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdzclly_7brmckAbW4PYi_Y0spHRiJ3IBn_Ylj8T7obzrDDzNy53u7V24w2JOoHI0vvYJOlc2Bh1DfiupF0npUxjtlW1nhmqdPOXCqlZUR85jr4Q16gGqopEh8O0hd4zMUDF.jpg?r=720" width="299" height="168">
+                            </div>
+                            <span>Via a Vis - il prezzo del riscatto</span>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="Serie">
+                            <div class="splide__slide__container">
+                            <img src="https://occ-0-2727-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABe_W2OOOAaJoFLss63EfM5FPtm3HNFx7Q3pNdykUjoRGOr4V4vw-qJ0oOnMp9gTBKKiDgj1YgluUD4OwI_WCjZd1_w_H_Gb-BSi705yEGCWmEhneTHzfiiCbd8H0pedczBeG.jpg?r=7c1" width="299" height="168">
+                            </div>
+                            <span>The Last Kindom</span>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="Serie">
+                            <div class="splide__slide__container">
+                                <img src="https://occ-0-2727-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABd539NVqfjhJhmGE7QCOfoN4ayIWRtprOCo5f5IoM-bsZ28iuj2eXA7CbBXrTOukoPbAXIsWAx9sKWgDdxL7C30dEMmcCAEJU87D3NPWi99Npvq9FDM9XltgupSZVKmfpY8D.jpg?r=6f1" width="299" height="168">
+                            </div>
+                            <span>Le ragazze del centrali</span>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="Serie">
+                            <div class="splide__slide__container">
+                                <img src="https://occ-0-2727-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABb41BswSPETt6vJpOBz_ORWI_tJv9cLz4pIP6mEjtHQf_QX-XdQobEFiixqdfudWphwpT6viHBXPb154YNWFzUZyY3XRyPkDKrHeQjUkqDZIBwBgxp--7y1clDq-iAPkOiVv.jpg?r=a36" width="299" height="168">
+                            </div>
+                            <span>La Regina del Sud</span>
+                        </div>
+                    </li>
+                  </ul>
+            </div>
+        </section>
+
+        <section class="splide" id="slider_crime" aria-labelledby="carousel-heading">
+            <h1 class="sottotitoli">Drammi TV USA</h1>
+
+            <div class="splide__arrows">
+                <button id="arrow_prev" class="splide__arrow splide__arrow--prev">
+                    <img src="img/icons8-minore-di-50.png">
+                </button>
+                <button id="arrow_next" class="splide__arrow splide__arrow--next">
+                    <img src="img/icons8-minore-di-50 (1).png" alt="">
+                </button>
+            </div>
+          
+            <div class="splide__track">
+                  <ul class="splide__list">
+                    
+                    <li class="splide__slide">
+                        <div class="Serie">
+                            <div class="splide__slide__container">
+                                <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZh5gztKzIvaf5HCF3txqX290iaca_BvK4ENS520KI9JNcSmalvyg9QUkHUhcpVURUEu04ivnNhOAUPS3FEL6nwBXruxrIJVQ7U.jpg?r=9ff" width="299" height="168">
+                              </div>
+                            <span>La casa di carta</span>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="Serie">
+                            <div class="splide__slide__container">
+                                <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbMrQ93yuhpL5LITyev8yVgyRiqdF8maKzQbk4CX7tOPN_tidEVSgriNku_RON0maXtrwK8nkIraybeNCdvYQViNFWGi8K_fjszvjC7_PqbZAfPUkibY38tdgEXVSpqWbKqI.jpg?r=2f1" width="299" height="168">
+                            </div>
+                            <span>Peaky Blinders</span>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="Serie">
+                            <div class="splide__slide__container">
+                                <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcHrdnFIp91al5xqQLOObROGHOmVkWP4ShyZMRDMJ2teL-eNM2FOm9K04US3vfJk7y-0tvx9Gbe4L-3LjmsqyhhA4ZGvadQzBQk0FTHfgByfuiLdYdBIdiEqXurJsnmdhshw.jpg?r=8a8" width="299" height="168">
+                            </div>
+                            <span>Via a Vis - il prezzo del riscatto</span>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="Serie">
+                            <div class="splide__slide__container">
+                                <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVqCFVM8IYYaS13uUxMRNtNyLUDxoO_snp1k3rPwDuO6RvMDLG08d6S411BoNpKZ7Zab1g45DSCHseP8O_oysX5NAwiIu1jWHkSqQUptak8Qv2QuDKW8UFMSDLZntPUwe_O1.jpg?r=af8" width="299" height="168">
+                            </div>
+                            <span>The Last Kindom</span>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="Serie">
+                            <div class="splide__slide__container">
+                                <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYPXI-ek7xbR4np_5HeBUgQfr2QFzbFTYcM-JHQ71BFWMC3wgpoRfj3N8u26PtCWG4kgA71UgLBXthLVgn2mCHa_7-BNdQW6YfOrbOy0F8OIyN-n3GJYcMHPW0lrQNjAwPqo.jpg?r=849" width="299" height="168">
+                            </div>
+                            <span>Le ragazze del centrali</span>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="Serie">
+                            <div class="splide__slide__container">
+                                <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXEhXvgmSVXHVfW1SWEYMXHQSjC0NZRrseMsB3CpXw8u0ItYUcQjNGtaQOHJ25966MdNvfha9SXeNVbQh_kP5zaw87AbhTNSvTLnbUPuuHX9fMG-ZjcI--GuLqQPXLqFuMce.jpg?r=b30" width="299" height="168">
+                            </div>
+                            <span>La Regina del Sud</span>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="Serie">
+                            <div class="splide__slide__container">
+                                <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWd0CAwIdJycDoZ0ExurkKeszRtfAcYmHPnIylwTiae_0AWNaznSkbWkcEGCL1cEPeOOucHPRLtcN4g6Gm3NfM7Jl8s_aiRpLV9b1bq1bMAx5mpYf7zjFwp626edrR77nvSg.jpg?r=abf" width="299" height="168">
+                            </div>
+                            <span>La Regina del Sud</span>
+                        </div>
+                    </li>
+                  </ul>
+            </div>
+        </section>
+
+        <section class="splide" id="slider_più_visti" aria-labelledby="carousel-heading">
+            <h1 class="sottotitoli">True crime</h1>
+
+            <div class="splide__arrows">
+                <button id="arrow_prev" class="splide__arrow splide__arrow--prev">
+                    <img src="img/icons8-minore-di-50.png">
+                </button>
+                <button id="arrow_next" class="splide__arrow splide__arrow--next">
+                    <img src="img/icons8-minore-di-50 (1).png" alt="">
+                </button>
+            </div>
+          
+            <div class="splide__track">
+                  <ul class="splide__list">
+                    
+                    <li class="splide__slide">
+                        <div class="Serie">
+                            <div class="splide__slide__container">
+                                <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZh5gztKzIvaf5HCF3txqX290iaca_BvK4ENS520KI9JNcSmalvyg9QUkHUhcpVURUEu04ivnNhOAUPS3FEL6nwBXruxrIJVQ7U.jpg?r=9ff" width="299" height="168">
+                              </div>
+                            <span>La casa di carta</span>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="Serie">
+                            <div class="splide__slide__container">
+                                <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbMrQ93yuhpL5LITyev8yVgyRiqdF8maKzQbk4CX7tOPN_tidEVSgriNku_RON0maXtrwK8nkIraybeNCdvYQViNFWGi8K_fjszvjC7_PqbZAfPUkibY38tdgEXVSpqWbKqI.jpg?r=2f1" width="299" height="168">
+                            </div>
+                            <span>Peaky Blinders</span>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="Serie">
+                            <div class="splide__slide__container">
+                                <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcHrdnFIp91al5xqQLOObROGHOmVkWP4ShyZMRDMJ2teL-eNM2FOm9K04US3vfJk7y-0tvx9Gbe4L-3LjmsqyhhA4ZGvadQzBQk0FTHfgByfuiLdYdBIdiEqXurJsnmdhshw.jpg?r=8a8" width="299" height="168">
+                            </div>
+                            <span>Via a Vis - il prezzo del riscatto</span>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="Serie">
+                            <div class="splide__slide__container">
+                                <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVqCFVM8IYYaS13uUxMRNtNyLUDxoO_snp1k3rPwDuO6RvMDLG08d6S411BoNpKZ7Zab1g45DSCHseP8O_oysX5NAwiIu1jWHkSqQUptak8Qv2QuDKW8UFMSDLZntPUwe_O1.jpg?r=af8" width="299" height="168">
+                            </div>
+                            <span>The Last Kindom</span>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="Serie">
+                            <div class="splide__slide__container">
+                                <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYPXI-ek7xbR4np_5HeBUgQfr2QFzbFTYcM-JHQ71BFWMC3wgpoRfj3N8u26PtCWG4kgA71UgLBXthLVgn2mCHa_7-BNdQW6YfOrbOy0F8OIyN-n3GJYcMHPW0lrQNjAwPqo.jpg?r=849" width="299" height="168">
+                            </div>
+                            <span>Le ragazze del centrali</span>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="Serie">
+                            <div class="splide__slide__container">
+                                <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXEhXvgmSVXHVfW1SWEYMXHQSjC0NZRrseMsB3CpXw8u0ItYUcQjNGtaQOHJ25966MdNvfha9SXeNVbQh_kP5zaw87AbhTNSvTLnbUPuuHX9fMG-ZjcI--GuLqQPXLqFuMce.jpg?r=b30" width="299" height="168">
+                            </div>
+                            <span>La Regina del Sud</span>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="Serie">
+                            <div class="splide__slide__container">
+                                <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWd0CAwIdJycDoZ0ExurkKeszRtfAcYmHPnIylwTiae_0AWNaznSkbWkcEGCL1cEPeOOucHPRLtcN4g6Gm3NfM7Jl8s_aiRpLV9b1bq1bMAx5mpYf7zjFwp626edrR77nvSg.jpg?r=abf" width="299" height="168">
+                            </div>
+                            <span>La Regina del Sud</span>
+                        </div>
+                    </li>
+                  </ul>
+            </div>
+        </section>
+
+        <script src="slider_TV.js"></script>
+</body>
+</html>

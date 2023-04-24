@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <title>Netflix</title>
+    <link rel="shortcut icon" href="img/icons8-netflix-an-american-video-on-demand-service-24.png" />
+    <script src="https://kit.fontawesome.com/06a651c8da.js"></script>
+  
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <div id="navbar">
+
+        <div class="icon-hamburger">
+            <span></span>
+            <span></span>
+        </div>
+        
+
+        <img id="logo_netflix" src="img/Logonetflix.png" height="30px">
+
+        <ul class="menu">
+            <a class="link" id="home" href="home.html">Home</a>
+            <a class="link" href="serie_TV.html">Serie TV</a>
+            <a class="link" href="player.html">Film</a>
+            <a class="link" href="#">Aggiunti di recente</a>
+        </ul>
+
+        <ul id="barra_ricerca">
+            <img id="lente_ricerca" src="img/icons8-ricerca-30.png" height="30px" width="30px">
+            <a id="sezione_bambini" href="#">BAMBINI</a>
+        </ul>
+    </div>
+
+    <div id="preview_contenitore">
+        <video id="video_preview" width="100%" autoplay muted>
+            <source src="img/interstellar.mp4" type="video/mp4">
+        </video>
+
+        <img id="sfondo_mobile" src="img/8e0dab8699be85720ce55845065bf6dc.jpg" width="100%">
+
+        <div id="overlay">
+            <div id="description_overlay">
+                <img src="img/AAAABZNK4G2vjR8cm1iC3k8u9VX8vrcHZT2cut7Q5t1pyE7xOTTA5NuTl0STYFYPizJ0pLLsvywL4H2mA84hS9lDn5mo-Nxb4XHFesAnN7dv0gRg.png" width="45%">
+
+                <h2 id="titolo_film_grande">Interstellar</h2>
+                <h3 id="generi_film">2h 49m | US Movies | Drammi</h3>
+                <h2 id="descrizione">L'umanità è sull'orlo dell'estinzione e un gruppo di astronauti viaggia <br> attraverso un wormhole alla ricerca di un altro pianeta abitabile.</h2>
+                <h2 id="attori">Con:<span id="descrizione">Matthew McConaughey,Anne Hathaway,Jessica Chastain</span></h2>
+
+                <div id="contenitore_pulsant_riproduci">
+                    <button class="pulsanti_overlay"><i class="fas fa-play"></i>&nbsp; Riproduci</button>
+
+                    <button id="volumeButton" type="button" class="pulsanti_overlay"><div id="icona_volume" class="fa fa-volume-mute"></div>&nbsp; Audio</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenitori_serie">
+        <section class="splide" id="slider_più_visti" aria-labelledby="carousel-heading">
+            <h1 class="sottotitoli">I più visti su Netflix</h1>
+
+            <div class="splide__arrows">
+                <button id="arrow_prev" class="splide__arrow splide__arrow--prev">
+                    <img src="img/icons8-minore-di-50.png">
+                </button>
+                <button id="arrow_next" class="splide__arrow splide__arrow--next">
+                    <img src="img/icons8-minore-di-50 (1).png" alt="">
+                </button>
+            </div>
+          
+            <div class="splide__track">
+                  <ul class="splide__list">
+                    
+                    <li class="splide__slide">
+                        <img src="img/AAAABTv_hsQZ830Yx0ZZc6tReA8d_UfebdxDnRyfUHDfv5vc8FU1V3MzjTOFSieePz1W4MIbxqVBhhQL-AdQ77Ee3_Li6MhFMU8sa4e4k1q1PCOHC5wsLqlGAkk8p7w8P2abxCM4.jpg">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-2727-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcL5jLOTAi6HXLNlsRDzpf7v08IAzrUNZrAnCbLWgI9pl9--18vxOC0c1HUa-_juV6tdkUCyaNltNHvRw1cjSsoSE8fATn0ATFW2Q9vQltY6Ffnf2BlQhxpAB6wSaf7_9nLp.jpg?r=c0e">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-2727-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdzclly_7brmckAbW4PYi_Y0spHRiJ3IBn_Ylj8T7obzrDDzNy53u7V24w2JOoHI0vvYJOlc2Bh1DfiupF0npUxjtlW1nhmqdPOXCqlZUR85jr4Q16gGqopEh8O0hd4zMUDF.jpg?r=720">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-2727-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABe_W2OOOAaJoFLss63EfM5FPtm3HNFx7Q3pNdykUjoRGOr4V4vw-qJ0oOnMp9gTBKKiDgj1YgluUD4OwI_WCjZd1_w_H_Gb-BSi705yEGCWmEhneTHzfiiCbd8H0pedczBeG.jpg?r=7c1">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-2727-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABd539NVqfjhJhmGE7QCOfoN4ayIWRtprOCo5f5IoM-bsZ28iuj2eXA7CbBXrTOukoPbAXIsWAx9sKWgDdxL7C30dEMmcCAEJU87D3NPWi99Npvq9FDM9XltgupSZVKmfpY8D.jpg?r=6f1">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-2727-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABb41BswSPETt6vJpOBz_ORWI_tJv9cLz4pIP6mEjtHQf_QX-XdQobEFiixqdfudWphwpT6viHBXPb154YNWFzUZyY3XRyPkDKrHeQjUkqDZIBwBgxp--7y1clDq-iAPkOiVv.jpg?r=a36">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXEhXvgmSVXHVfW1SWEYMXHQSjC0NZRrseMsB3CpXw8u0ItYUcQjNGtaQOHJ25966MdNvfha9SXeNVbQh_kP5zaw87AbhTNSvTLnbUPuuHX9fMG-ZjcI--GuLqQPXLqFuMce.jpg?r=b30">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXEhXvgmSVXHVfW1SWEYMXHQSjC0NZRrseMsB3CpXw8u0ItYUcQjNGtaQOHJ25966MdNvfha9SXeNVbQh_kP5zaw87AbhTNSvTLnbUPuuHX9fMG-ZjcI--GuLqQPXLqFuMce.jpg?r=b30">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXEhXvgmSVXHVfW1SWEYMXHQSjC0NZRrseMsB3CpXw8u0ItYUcQjNGtaQOHJ25966MdNvfha9SXeNVbQh_kP5zaw87AbhTNSvTLnbUPuuHX9fMG-ZjcI--GuLqQPXLqFuMce.jpg?r=b30">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXEhXvgmSVXHVfW1SWEYMXHQSjC0NZRrseMsB3CpXw8u0ItYUcQjNGtaQOHJ25966MdNvfha9SXeNVbQh_kP5zaw87AbhTNSvTLnbUPuuHX9fMG-ZjcI--GuLqQPXLqFuMce.jpg?r=b30">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXEhXvgmSVXHVfW1SWEYMXHQSjC0NZRrseMsB3CpXw8u0ItYUcQjNGtaQOHJ25966MdNvfha9SXeNVbQh_kP5zaw87AbhTNSvTLnbUPuuHX9fMG-ZjcI--GuLqQPXLqFuMce.jpg?r=b30">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXEhXvgmSVXHVfW1SWEYMXHQSjC0NZRrseMsB3CpXw8u0ItYUcQjNGtaQOHJ25966MdNvfha9SXeNVbQh_kP5zaw87AbhTNSvTLnbUPuuHX9fMG-ZjcI--GuLqQPXLqFuMce.jpg?r=b30">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXEhXvgmSVXHVfW1SWEYMXHQSjC0NZRrseMsB3CpXw8u0ItYUcQjNGtaQOHJ25966MdNvfha9SXeNVbQh_kP5zaw87AbhTNSvTLnbUPuuHX9fMG-ZjcI--GuLqQPXLqFuMce.jpg?r=b30">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXEhXvgmSVXHVfW1SWEYMXHQSjC0NZRrseMsB3CpXw8u0ItYUcQjNGtaQOHJ25966MdNvfha9SXeNVbQh_kP5zaw87AbhTNSvTLnbUPuuHX9fMG-ZjcI--GuLqQPXLqFuMce.jpg?r=b30">
+                    </li>
+                  </ul>
+            </div>
+        </section>
+
+        <section class="splide" id="slider_top" aria-labelledby="carousel-heading">
+            <h1 class="sottotitoli">Top 10 in italia oggi</h1>
+
+            <div class="splide__arrows">
+                <button id="arrow_prev" class="splide__arrow splide__arrow--prev">
+                    <img src="img/icons8-minore-di-50.png">
+                </button>
+                <button id="arrow_next" class="splide__arrow splide__arrow--next">
+                    <img src="img/icons8-minore-di-50 (1).png" alt="">
+                </button>
+            </div>
+          
+            <div class="splide__track">
+                  <ul class="splide__list">
+                    
+                    <li class="splide__slide">
+                        <img src="img/1.png" height="200px">
+                        <img class="locandina_top" src="img/La-Casa-di-Carta-La-Casa-de-Papel-5-2021.jpg" height="200px">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/2.png" height="200px">
+                        <img class="locandina_top" src="img/La-Casa-di-Carta-La-Casa-de-Papel-5-2021.jpg" height="200px">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/3.png" height="200px">
+                        <img class="locandina_top" src="img/La-Casa-di-Carta-La-Casa-de-Papel-5-2021.jpg" height="200px">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/4.png" height="200px">
+                        <img class="locandina_top" src="img/La-Casa-di-Carta-La-Casa-de-Papel-5-2021.jpg" height="200px">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/5.png" height="200px">
+                        <img class="locandina_top" src="img/La-Casa-di-Carta-La-Casa-de-Papel-5-2021.jpg" height="200px">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/6.png" height="200px">
+                        <img class="locandina_top" src="img/La-Casa-di-Carta-La-Casa-de-Papel-5-2021.jpg" height="200px">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/7.png" height="200px">
+                        <img class="locandina_top" src="img/La-Casa-di-Carta-La-Casa-de-Papel-5-2021.jpg" height="200px">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/8.png" height="200px">
+                        <img class="locandina_top" src="img/La-Casa-di-Carta-La-Casa-de-Papel-5-2021.jpg" height="200px">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/9.png" height="200px">
+                        <img class="locandina_top" src="img/La-Casa-di-Carta-La-Casa-de-Papel-5-2021.jpg" height="200px">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/10.png" height="200px">
+                        <img class="locandina_top" src="img/La-Casa-di-Carta-La-Casa-de-Papel-5-2021.jpg" height="200px">
+                    </li>
+                  </ul>
+            </div>
+        </section>
+
+        <section class="splide" id="slider_drammi" aria-labelledby="carousel-heading">
+            <h1 class="sottotitoli">Drammi TV USA</h1>
+
+            <div class="splide__arrows">
+                <button id="arrow_prev" class="splide__arrow splide__arrow--prev">
+                    <img src="img/icons8-minore-di-50.png">
+                </button>
+                <button id="arrow_next" class="splide__arrow splide__arrow--next">
+                    <img src="img/icons8-minore-di-50 (1).png" alt="">
+                </button>
+            </div>
+          
+            <div class="splide__track">
+                  <ul class="splide__list">
+                    
+                    <li class="splide__slide">
+                        <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZh5gztKzIvaf5HCF3txqX290iaca_BvK4ENS520KI9JNcSmalvyg9QUkHUhcpVURUEu04ivnNhOAUPS3FEL6nwBXruxrIJVQ7U.jpg?r=9ff">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbMrQ93yuhpL5LITyev8yVgyRiqdF8maKzQbk4CX7tOPN_tidEVSgriNku_RON0maXtrwK8nkIraybeNCdvYQViNFWGi8K_fjszvjC7_PqbZAfPUkibY38tdgEXVSpqWbKqI.jpg?r=2f1">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcHrdnFIp91al5xqQLOObROGHOmVkWP4ShyZMRDMJ2teL-eNM2FOm9K04US3vfJk7y-0tvx9Gbe4L-3LjmsqyhhA4ZGvadQzBQk0FTHfgByfuiLdYdBIdiEqXurJsnmdhshw.jpg?r=8a8">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVqCFVM8IYYaS13uUxMRNtNyLUDxoO_snp1k3rPwDuO6RvMDLG08d6S411BoNpKZ7Zab1g45DSCHseP8O_oysX5NAwiIu1jWHkSqQUptak8Qv2QuDKW8UFMSDLZntPUwe_O1.jpg?r=af8">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYPXI-ek7xbR4np_5HeBUgQfr2QFzbFTYcM-JHQ71BFWMC3wgpoRfj3N8u26PtCWG4kgA71UgLBXthLVgn2mCHa_7-BNdQW6YfOrbOy0F8OIyN-n3GJYcMHPW0lrQNjAwPqo.jpg?r=849">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXEhXvgmSVXHVfW1SWEYMXHQSjC0NZRrseMsB3CpXw8u0ItYUcQjNGtaQOHJ25966MdNvfha9SXeNVbQh_kP5zaw87AbhTNSvTLnbUPuuHX9fMG-ZjcI--GuLqQPXLqFuMce.jpg?r=b30">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWd0CAwIdJycDoZ0ExurkKeszRtfAcYmHPnIylwTiae_0AWNaznSkbWkcEGCL1cEPeOOucHPRLtcN4g6Gm3NfM7Jl8s_aiRpLV9b1bq1bMAx5mpYf7zjFwp626edrR77nvSg.jpg?r=abf">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYPXI-ek7xbR4np_5HeBUgQfr2QFzbFTYcM-JHQ71BFWMC3wgpoRfj3N8u26PtCWG4kgA71UgLBXthLVgn2mCHa_7-BNdQW6YfOrbOy0F8OIyN-n3GJYcMHPW0lrQNjAwPqo.jpg?r=849">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-2727-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABda6fYKtAN4OxFdE3lgcmLnwLXHBvLzJipZkb6wTjOx-yxXo7WR6R9tu-XwXHN4dWDcXCjt5Sb7weyjJJzpGVSm3JDiQ3MRbXKM.jpg?r=039">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-2727-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfE3AMaJW2Kep6fFk7XgiQnn467InCMOtXERsDfn9D6xJUsUPq0wOHihENZ4hhyI0MBBQxPn0HjqTgwf_Gaiei1foQfMW2fOfls.jpg?r=e44">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-2727-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWEdkDo2Y2s5DeFyAkE5QPAVwIbP9UVnJ_WZ38IgNRjv4ejppk9dQYD09qqk0pWscFd-7yAe4B18ihvbWB0NFCJqaHLtnx92u-s.jpg?r=972">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-2727-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaPoLEMImijG6v6hDz4T1Ht_oQHvTKOTXRs6zbmXCl3hhZ1boY6MnG5xiFQFEuMKzQRGVMt8MmGR8B8RM76rMj-zTpi3ilBL76E.jpg?r=21b">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-2727-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdUI0C3xxwjmBA4pEm_OEjwTkpGJ9u-A8J67LE6wZMmv6r2j9n-xDvz64eDO8rdUQHQ7RvEpXvSRNJACF3Wukv-ZUx-do9HXmJg.jpg?r=8f6">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-2727-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQ9dgjYgCDO9ElToNMbxy3cUdgBwZwyb4XlKEouxnJATwt3nF4E6AhsdT7dCLoDCKnydYHki_JoaooPHh8xmF4S6rKyUQHiBrtU.jpg?r=799">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-2727-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABS-Hmw84kLyJ8vapcMviYjRYyRrdzgKQTbCG-jYubZ23gFg6kltxs7gNwx5cLdnBvZF1nZJqjT2_Fi_uL0tGaEwJ-yHc6FInO0yjmQc0fQVZ8uUKQNwFKWq1pEoCzRg7px7I.jpg?r=648">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-2727-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbLKs89trGtu2H6IXIV8I710qNIhtG6U2MJ4AyCZUs_QHsOUzWIvNQ-z49nFIcfBBYnWOcjzU8f6gbhjCV1Zqgjl1gVRAe-FL7OR0Ve3pFZengaiNJyTOgMHy9Nsz2Nocq2Z.jpg?r=b12">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-2727-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbMrQ93yuhpL5LITyev8yVgyRiqdF8maKzQbk4CX7tOPN_tidEVSgriNku_RON0maXtrwK8nkIraybeNCdvYQViNFWGi8K_fjszvjC7_PqbZAfPUkibY38tdgEXVSpqWbKqI.jpg?r=2f1">
+                    </li>
+                  </ul>
+            </div>
+        </section>
+
+        <section class="splide" id="slider_crime" aria-labelledby="carousel-heading">
+            <h1 class="sottotitoli">True crime</h1>
+
+            <div class="splide__arrows">
+                <button id="arrow_prev" class="splide__arrow splide__arrow--prev">
+                    <img src="img/icons8-minore-di-50.png">
+                </button>
+                <button id="arrow_next" class="splide__arrow splide__arrow--next">
+                    <img src="img/icons8-minore-di-50 (1).png" alt="">
+                </button>
+            </div>
+          
+            <div class="splide__track">
+                  <ul class="splide__list">
+                    
+                    <li class="splide__slide">
+                        <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZh5gztKzIvaf5HCF3txqX290iaca_BvK4ENS520KI9JNcSmalvyg9QUkHUhcpVURUEu04ivnNhOAUPS3FEL6nwBXruxrIJVQ7U.jpg?r=9ff">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbMrQ93yuhpL5LITyev8yVgyRiqdF8maKzQbk4CX7tOPN_tidEVSgriNku_RON0maXtrwK8nkIraybeNCdvYQViNFWGi8K_fjszvjC7_PqbZAfPUkibY38tdgEXVSpqWbKqI.jpg?r=2f1">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcHrdnFIp91al5xqQLOObROGHOmVkWP4ShyZMRDMJ2teL-eNM2FOm9K04US3vfJk7y-0tvx9Gbe4L-3LjmsqyhhA4ZGvadQzBQk0FTHfgByfuiLdYdBIdiEqXurJsnmdhshw.jpg?r=8a8">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVqCFVM8IYYaS13uUxMRNtNyLUDxoO_snp1k3rPwDuO6RvMDLG08d6S411BoNpKZ7Zab1g45DSCHseP8O_oysX5NAwiIu1jWHkSqQUptak8Qv2QuDKW8UFMSDLZntPUwe_O1.jpg?r=af8">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYPXI-ek7xbR4np_5HeBUgQfr2QFzbFTYcM-JHQ71BFWMC3wgpoRfj3N8u26PtCWG4kgA71UgLBXthLVgn2mCHa_7-BNdQW6YfOrbOy0F8OIyN-n3GJYcMHPW0lrQNjAwPqo.jpg?r=849">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXEhXvgmSVXHVfW1SWEYMXHQSjC0NZRrseMsB3CpXw8u0ItYUcQjNGtaQOHJ25966MdNvfha9SXeNVbQh_kP5zaw87AbhTNSvTLnbUPuuHX9fMG-ZjcI--GuLqQPXLqFuMce.jpg?r=b30">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXEhXvgmSVXHVfW1SWEYMXHQSjC0NZRrseMsB3CpXw8u0ItYUcQjNGtaQOHJ25966MdNvfha9SXeNVbQh_kP5zaw87AbhTNSvTLnbUPuuHX9fMG-ZjcI--GuLqQPXLqFuMce.jpg?r=b30">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXEhXvgmSVXHVfW1SWEYMXHQSjC0NZRrseMsB3CpXw8u0ItYUcQjNGtaQOHJ25966MdNvfha9SXeNVbQh_kP5zaw87AbhTNSvTLnbUPuuHX9fMG-ZjcI--GuLqQPXLqFuMce.jpg?r=b30">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXEhXvgmSVXHVfW1SWEYMXHQSjC0NZRrseMsB3CpXw8u0ItYUcQjNGtaQOHJ25966MdNvfha9SXeNVbQh_kP5zaw87AbhTNSvTLnbUPuuHX9fMG-ZjcI--GuLqQPXLqFuMce.jpg?r=b30">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXEhXvgmSVXHVfW1SWEYMXHQSjC0NZRrseMsB3CpXw8u0ItYUcQjNGtaQOHJ25966MdNvfha9SXeNVbQh_kP5zaw87AbhTNSvTLnbUPuuHX9fMG-ZjcI--GuLqQPXLqFuMce.jpg?r=b30">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXEhXvgmSVXHVfW1SWEYMXHQSjC0NZRrseMsB3CpXw8u0ItYUcQjNGtaQOHJ25966MdNvfha9SXeNVbQh_kP5zaw87AbhTNSvTLnbUPuuHX9fMG-ZjcI--GuLqQPXLqFuMce.jpg?r=b30">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXEhXvgmSVXHVfW1SWEYMXHQSjC0NZRrseMsB3CpXw8u0ItYUcQjNGtaQOHJ25966MdNvfha9SXeNVbQh_kP5zaw87AbhTNSvTLnbUPuuHX9fMG-ZjcI--GuLqQPXLqFuMce.jpg?r=b30">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXEhXvgmSVXHVfW1SWEYMXHQSjC0NZRrseMsB3CpXw8u0ItYUcQjNGtaQOHJ25966MdNvfha9SXeNVbQh_kP5zaw87AbhTNSvTLnbUPuuHX9fMG-ZjcI--GuLqQPXLqFuMce.jpg?r=b30">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://occ-0-5020-2582.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXEhXvgmSVXHVfW1SWEYMXHQSjC0NZRrseMsB3CpXw8u0ItYUcQjNGtaQOHJ25966MdNvfha9SXeNVbQh_kP5zaw87AbhTNSvTLnbUPuuHX9fMG-ZjcI--GuLqQPXLqFuMce.jpg?r=b30">
+                    </li>
+                  </ul>
+            </div>
+        </section>
+
+        <script type="text/javascript" src="slider.js"></script>
+</body>
+</html>
