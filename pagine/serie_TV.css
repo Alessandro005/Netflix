@@ -231,10 +231,10 @@ span {
     }
 
     .splide__slide span {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .splide__slide {
-        height: 135px !important;
+        height: 140px !important;
     }
 }
