@@ -1,0 +1,240 @@
+body {
+    margin: 0%;
+    background-color: #181818;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#navbar {
+    background-color: black;
+    display: flex;
+    z-index: 2;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+#logo_netflix {
+    padding: 15px;
+    margin-left: 30px;
+}
+
+#SerieTV {
+    color: white;
+}
+
+ul {
+    display: flex;
+    margin-bottom: 0;
+}
+
+ul li {
+    margin-top: 5px;
+}
+
+.link {
+    list-style: none;
+    font-family: 'Arial';
+    color: #ACACAC;
+    margin: 5px 15px 0px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+}
+
+.link::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background-color: #BF0412;
+    position: absolute;
+    bottom: 0 !important;
+    left: 0;
+    border-radius: 2px;
+    transition: all 0.1s ease-in-out;
+    margin: 0;
+    padding: 0;
+}
+
+.link:hover::before {
+    width: 100%;
+}
+
+#barra_ricerca {
+    margin-left: auto;
+    display: flex;
+    margin-right: 30px;
+}
+
+#sezione_bambini {
+    list-style: none;
+    font-family: 'Arial';
+    color: #ACACAC;
+    margin: 5px 15px 0px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+}
+
+#titolo_principale_pagina {
+    color: white;
+    font-family: 'Arial';
+    font-size: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+#descrizione_principale_pagina {
+    color: white;
+    font-family: 'Arial';
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.contenitori_serie {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #181818;
+}
+
+span {
+    top: 5px;
+    position: relative;
+}
+
+.sottotitoli {
+    color: white;
+    font-family: 'Calibri', sans-serif;
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+.Serie {
+    text-align: center;
+    color: white;
+    font-family: 'Arial';
+}
+
+.splide__slide__container img {
+    width: 299px; 
+    height: 168px;
+}
+
+#arrow_prev {
+    background-color: #6b6b6b00;
+    position: absolute;
+}
+
+#arrow_next {
+    background-color: #6b6b6b00;
+}
+
+.splide__slide img:hover {
+    cursor:pointer;
+}
+
+/*Responsive Tablet*/
+
+@media (max-width: 832px) {
+    #description_overlay img {
+        display: none;
+    }
+
+    .menu {
+        position: absolute;
+        top: 40px;
+        width: 100%;
+        height: 100vh;
+        height: 0vh;
+        overflow: hidden;
+        background-color: black;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+    }
+
+    .menu-open .menu{
+        height: 244px;
+    }
+
+    .menu a {
+        width: 100%;
+        height: 20px;
+        padding: 20px 0px;
+        border-bottom: solid 1px #999999;
+    }
+
+    .link {
+        margin: 0;
+    }
+
+    .link::before {
+        background-color: #18181800;
+    }
+    
+    .icon-hamburger {
+        height: 30px;
+        width: 30px;
+        margin-top: 10px;
+        margin-left: 30px;
+        margin-right: auto;
+    }
+
+    #barra_ricerca {
+        padding: 0;
+    }
+
+    #logo_netflix {
+        margin: 0;
+    }
+
+    .icon-hamburger span{
+        height: 1px;
+        width: 30px;
+        background-color: white;
+        position: relative;
+        display: block;
+        margin-top: 12px;
+    }
+    
+    #sezione_bambini, #descrizione_principale_pagina br, #arrow_prev, #arrow_next {
+        display: none;
+    }
+}
+
+/*Responsive Telefoni*/
+
+@media (max-width: 400px) {
+    .sottotitoli {
+        font-size: 20px;
+    }
+
+    .splide__slide__container img {
+        width: 267px; 
+        height: 150px;
+    }
+
+    .img_serie {
+        width: 200px !important; 
+        height: 112px !important;
+    }
+
+    .splide__slide span {
+        font-size: 13px;
+    }
+
+    .splide__slide {
+        height: 135px !important;
+    }
+}
