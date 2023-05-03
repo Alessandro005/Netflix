@@ -8,7 +8,7 @@ body::-webkit-scrollbar {
 }
 
 #navbar {
-    background-color: black;
+    background-image: linear-gradient(to bottom, rgba(24, 24, 24, 0.7) 0%, rgba(58, 58, 58, 0.5) 50%,rgba(99, 99, 99, 0.2) 90%, rgba(20, 20, 20, 0.0001) 100%);
     display: flex;
     z-index: 2;
     position: fixed;
@@ -19,10 +19,6 @@ body::-webkit-scrollbar {
 #logo_netflix {
     padding: 15px;
     margin-left: 30px;
-}
-
-#home {
-    color: white;
 }
 
 ul {
@@ -37,7 +33,7 @@ ul li {
 .link {
     list-style: none;
     font-family: 'Arial';
-    color: #ACACAC;
+    color: white;
     margin: 5px 15px 0px;
     padding-bottom: 15px;
     text-decoration: none;
@@ -73,7 +69,7 @@ ul li {
 #sezione_bambini {
     list-style: none;
     font-family: 'Arial';
-    color: #ACACAC;
+    color: white;
     margin: 5px 15px 0px;
     padding-bottom: 15px;
     text-decoration: none;
@@ -101,8 +97,8 @@ ul li {
 
 #description_overlay {
     position: relative;
-    left: 5%;
-    padding-bottom: 5% !important;
+    margin-left: 5%;
+    margin-top: 10%;
 }
 
 #titolo_film_grande {
@@ -120,27 +116,26 @@ ul li {
 #descrizione {
     color: white;
     font-family: 'Calibri', sans-serif;
-    font-size: 17px;
-}
-
-#attori {
-    color: #ACACAC;
-    font-family: 'Calibri', sans-serif;
     font-size: 20px;
 }
 
-.pulsanti_overlay {
-    background-color: #bbbbbb66;
+.pulsanti_overlay_play {
+    background-color: white;
     border: none;
-    width: 190px;
-    height: 40px;
-    color: white;
+    width: 92px;
+    height: 30px;
+    color: black;
     border-radius: 3px;
 }
 
-.pulsanti_overlay:hover {
-    background-color: #bbbbbbb9;
+.pulsanti_overlay_info {
+    background-color: rgba(133,133,133,0.6);
+    border: none;
+    width: 140px;
+    height: 30px;
     color: white;
+    border-radius: 3px;
+    margin-left: 10px;
 }
 
 .contenitori_serie {
@@ -174,19 +169,12 @@ ul li {
 }
 
 .splide__slide img:hover {
-    cursor:pointer;
+    cursor: pointer;
 }
 
 /*Responsive Tablet*/
 
 @media (max-width: 1110px) {
-    #description_overlay {
-        top: 20%;
-    }
-
-    #description_overlay img {
-        display: none !important;
-    }
 }
 
 /*Responsive Telefoni*/
@@ -195,10 +183,6 @@ ul li {
     #navbar {
         background-color: transparent;
         transition: background-color 0.4s ease-in-out;
-    }
-
-    #description_overlay img {
-        width: 100%;
     }
 
     .menu {
@@ -263,12 +247,8 @@ ul li {
         display: initial;
     }
 
-    #attori, #volumeButton, #video_preview, #sezione_bambini, #descrizione br, #arrow_prev, #arrow_next  {
+    #attori, #video_preview, #sezione_bambini, #descrizione br, #arrow_prev, #arrow_next  {
         display: none;
-    }
-
-    #description_overlay img {
-        display: unset !important;
     }
 
     #description_overlay {

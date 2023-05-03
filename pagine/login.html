@@ -14,15 +14,31 @@
     <div id="contenitore_form">
         <h1 id="accedi_text">Accedi</h1>
         <form action="">
-            <label for="">Email o numero di telefono</label>
-            <input class="input_text" type="text" name="" id="">
-            <label for="">Password</label>
-            <input class="input_text" type="text" name="" id="">
-            <button>Accedi</button>
+            <label id="label_email" class="label_email">Email o numero di telefono</label>
+            <input class="input_text_email" type="text" name="" id="">
+            <label id="label_password" class="label_password">Password</label>
+            <input class="input_text_password" type="text" name="" id="">
+            <button id="button" type="button">Accedi</button>
         </form>
 
         <h4>Prima volta su Netflix? <a href="#">Registrati.</a></h4>
         <h5>Questa pagina è protetta da Google reCAPTCHA per garantire che tu non sia un bot.</h5>
     </div>
+
+    <script>
+        document.getElementById("label_email").addEventListener("click", function() {
+        var label = document.querySelector(".label_email");
+        var input = document.querySelector(".input_text_email");
+        label.classList.add("label_active");
+        input.classList.add("input_active");
+        });
+
+        document.getElementById("label_password").addEventListener("click", function() {
+        var label = document.querySelector(".label_password");
+        var input = document.querySelector(".input_text_password");
+        label.classList.add("label_active");
+        input.classList.add("input_active");
+        });
+    </script>
 </body>
 </html>

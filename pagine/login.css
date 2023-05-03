@@ -22,7 +22,30 @@ body {
     font-family: sans-serif;
 }
 
-.input_text {
+.input_text_email{
+    background-color: #333333;
+    padding: 16 20px 0px;
+    border-radius: 5px;
+    border: 0px;
+    line-height: 50px;
+    margin: 10px 0;
+    width: 100%;
+    height: 50px;
+}
+
+.input_text_password{
+    background-color: #333333;
+    padding: 16 20px 0px;
+    border-radius: 5px;
+    border: 0px;
+    line-height: 50px;
+    margin: 10px 0;
+    width: 100%;
+    height: 50px;
+}
+
+.input_active{
+    background-color: white;
     padding: 16 20px 0px;
     border-radius: 5px;
     border: 0px;
@@ -33,13 +56,34 @@ body {
     color: black;
 }
 
-form label {
+.label_email {
+    position: absolute;
+    font-size: 15px;
+    margin: 10px;
+    font-family: sans-serif;
+    margin-top: 25px;
+    margin-left: 20px;
+    color: #8C8C8C;
+}
+
+.label_password {
+    position: absolute;
+    font-size: 15px;
+    margin: 10px;
+    font-family: sans-serif;
+    margin-top: 25px;
+    margin-left: 20px;
+    color: #8C8C8C;
+}
+
+.label_active {
     position: absolute;
     font-size: 11px;
     margin: 10px;
     font-family: sans-serif;
     margin-top: 20px;
     margin-left: 20px;
+    color: black;
 }
 
 form button {
@@ -70,7 +114,7 @@ form button {
     font-family: sans-serif;
 }
 
-@media (max-width: 832px) {
+@media (max-width: 400px) {
     #contenitore_form{
         position: relative;
         width: auto;
