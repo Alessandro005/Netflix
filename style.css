@@ -178,7 +178,7 @@ ul li {
 }
 
 #big_selection {
-    width: 100%;
+    width: 100% !important;
     height: 500px;
     display: flex;
     padding: 30px 0;
@@ -186,6 +186,8 @@ ul li {
 
 #locandina {
     padding-right: 30px;
+    width: 50%;
+    height: auto;
 }
 
 #titolo_serie {
@@ -204,13 +206,26 @@ ul li {
     margin-top: 40px;
 }
 
+#big_selection #descrizione {
+    width: auto;
+    margin-right: 20%;
+}
+
 #name_serie_selection b {
     margin-left: 10px;
 }
 
 /*Responsive Tablet*/
 
-@media (max-width: 1110px) {
+@media (max-width: 1000px) {
+    #big_selection {
+        display: inline;
+        text-align: center;
+    }
+
+    #locandina {
+        width: 100%;
+    }
 }
 
 /*Responsive Telefoni*/
