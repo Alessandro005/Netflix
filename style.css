@@ -202,8 +202,6 @@ ul li {
 #name_serie_selection {
     color: white;
     font-size: 25px;
-    display: flex;
-    align-items: center;
 }
 
 #big_selection #name_serie_selection, #descrizione, #contenitore_pulsant_riproduci {
@@ -219,6 +217,10 @@ ul li {
     margin-left: 10px;
 }
 
+.space {
+    display: none;
+}
+
 /*Responsive Tablet*/
 
 @media (max-width: 1000px) {
@@ -228,8 +230,7 @@ ul li {
     }
 
     #name_serie_selection {
-        padding: 0 15%;
-        width: 70%;
+        width: auto;
     }
 
     #big_selection #descrizione {
