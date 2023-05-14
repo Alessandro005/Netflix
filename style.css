@@ -94,6 +94,10 @@ ul li {
     position: relative;
 }
 
+#video_preview {
+    z-index: -100; 
+}
+
 #overlay {
     background: -webkit-linear-gradient(top,#18181800,#181818);
     position: absolute;
@@ -318,6 +322,8 @@ ul li {
 
     .contenitori_serie {
         margin-top: -5%;
+        margin-left: 40px;
+        margin-right: 40px;
     }
 
     #descrizione {
